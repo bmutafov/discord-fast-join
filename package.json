@@ -1,0 +1,25 @@
+{
+	"name": "discord-fast-join",
+	"productionName": "MrBeast Gaming channel fast join",
+	"version": "1.3.0",
+	"description": "With this app you join click on a server invitation as fast as you can!",
+	"win": {
+		"icon": "./img/icon.ico"
+	},
+	"main": "main.js",
+	"scripts": {
+		"start": "electron  .",
+		"build": "electron-packager .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Ma6inata Studios",
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^9.0.0",
+		"electron-packager": "^14.2.1"
+	},
+	"dependencies": {
+		"puppeteer": "^3.1.0"
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="script-src 'self' 'unsafe-inline';"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div class="left-panel">
+				<label for="email">Email</label>
+				<input
+					class="input-field"
+					type="email"
+					name="email"
+					id="email"
+				/>
+				<label for="password">Password</label>
+				<input
+					class="input-field"
+					type="password"
+					name="password"
+					id="password"
+				/>
+				<label for="channel">Server name</label>
+				<input
+					class="input-field"
+					type="text"
+					name="server"
+					id="server"
+				/>
+				<label for="channel">Channel</label>
+				<input
+					class="input-field"
+					type="text"
+					name="channel"
+					id="channel"
+				/>
+				<div class="save-data">
+					<input
+						type="checkbox"
+						name="save"
+						id="save"
+						checked="true"
+					/>
+					<label for="save">Save for next start-up</label>
+				</div>
+				<div class="save-data">
+					<input
+						type="checkbox"
+						name="headless"
+						id="headless"
+						checked="true"
+					/>
+					<label for="headless">Headless browser</label>
+				</div>
+				<div class="button-wrapper">
+					<button class="red-btn" id="close" disabled="true">
+						STOP
+					</button>
+					<button id="submit" class="btn">START</button>
+				</div>
+			</div>
+			<div class="right-panel">
+				<div class="console-header">
+					<h2>Console</h2>
+					<a href="#" id="clear">Clear</a>
+				</div>
+				<div id="message-box">
+					<!-- <div class="message error">
+						<span class="time">[18:32]</span>
+						<span class="text">Joined discord.com</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
